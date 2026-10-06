@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.material-symbols-outlined{font-variation-settings:'FILL' 0,'wght' 300,'GRAD' 0,'opsz' 24;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "secondary-container": "#ffc293", "surface-container-high": "#eae8e2", "outline-variant": "#cec5bd", "error-container": "#ffdad6", "secondary-fixed-dim": "#f6ba8b", "on-secondary-container": "#7a4e27", "on-tertiary-container": "#7a877c", "surface-container-lowest": "#ffffff", "on-error-container": "#93000a", "surface-tint": "#615e5b", "inverse-surface": "#30312d", "on-surface": "#1b1c18", "on-tertiary": "#ffffff", "tertiary-fixed": "#d8e6d9", "inverse-primary": "#cbc5c2", "on-secondary-fixed-variant": "#663d18", "on-primary": "#ffffff", "on-background": "#1b1c18", "tertiary-container": "#131e16", "primary-fixed": "#e7e1de", "inverse-on-surface": "#f3f1eb", "on-secondary-fixed": "#2f1500", "on-primary-fixed-variant": "#494644", "error": "#ba1a1a", "surface-container-low": "#f5f3ed", "surface-container-highest": "#e4e2dd", "on-primary-fixed": "#1d1b19", "primary": "#000000", "secondary-fixed": "#ffdcc3", "background": "#fbf9f3", "tertiary-fixed-dim": "#bccabd", "on-surface-variant": "#4b4640", "on-secondary": "#ffffff", "on-tertiary-fixed": "#131e16", "surface-variant": "#e4e2dd", "tertiary": "#000000", "surface-dim": "#dcdad4", "secondary": "#82542d", "surface-bright": "#fbf9f3", "on-error": "#ffffff", "primary-container": "#1d1b19", "surface": "#fbf9f3", "surface-container": "#f0eee8", "on-primary-container": "#878380", "primary-fixed-dim": "#cbc5c2", "outline": "#7d766f", "on-tertiary-fixed-variant": "#3d4a40" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter-mobile": "1rem", "space-xl": "2.5rem", "margin-mobile": "1.25rem", "space-md": "1rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-2xl": "4rem", "space-lg": "1.5rem", "margin": "4rem", "space-3xl": "6rem", "margin-tablet": "2rem" }, fontFamily: { "label-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "display-xl-mobile": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "display-xl": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "headline-sm": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "headline-md": ["Playfair Display"] }, fontSize: { "label-lg": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.08em", fontWeight: "600" }], "body-sm": ["0.875rem", { lineHeight: "1.375rem", letterSpacing: "0.005em", fontWeight: "400" }], "display-xl-mobile": ["2.75rem", { lineHeight: "3.25rem", letterSpacing: "-0.01em", fontWeight: "400" }], "body-lg": ["1.125rem", { lineHeight: "1.875rem", letterSpacing: "-0.005em", fontWeight: "400" }], "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.12em", fontWeight: "600" }], "display-xl": ["4.5rem", { lineHeight: "5rem", letterSpacing: "-0.02em", fontWeight: "400" }], "headline-lg-mobile": ["2rem", { lineHeight: "2.5rem", letterSpacing: "-0.01em", fontWeight: "400" }], "headline-sm": ["1.5rem", { lineHeight: "2rem", letterSpacing: "0em", fontWeight: "500" }], "body-md": ["1rem", { lineHeight: "1.625rem", letterSpacing: "0em", fontWeight: "400" }], "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.14em", fontWeight: "500" }], "headline-lg": ["3rem", { lineHeight: "3.5rem", letterSpacing: "-0.015em", fontWeight: "400" }], "headline-md": ["2rem", { lineHeight: "2.5rem", letterSpacing: "0em", fontWeight: "500" }] } } } }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="NVR Interiors Studio Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UGRJvRDvGhbXmPabFFapEIXouunI6-fFfzpLmQgsyAr8Bw4mRJ9YtvKA46PhqpOCEuEf6c0Mh0_YMmmUwHHdc4f-uPrdWMtd2F80CnO9q4-PX6oaLw61f9wP5lSq1Sosq-DjJ7axN_j4dZOpffq54zMMhERMjAh_rMzy3HjORsNJHDg0kTlkxJrkDmWZunj8Tu-YkLVqDdfR7_WwawMiprVZyps46A--Bik9yhoFcPju69YVI9Y3MEV8Ap"/><div class="flex flex-col min-w-0"><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface truncate">NVR Interiors</span><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase truncate">About</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><a aria-label="Consultation Call" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary transition-colors duration-200 active:scale-95" href="tel:+18005550199"><span class="material-symbols-outlined text-[20px]">call</span></a><button aria-label="Menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-secondary transition-colors duration-200 active:scale-95" type="button"><span class="material-symbols-outlined text-[22px]">menu</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Editorial Studio Header & Visual Canvas -->
+<section class="relative w-full overflow-hidden bg-surface-container-low pt-space-xl pb-space-2xl px-margin-mobile">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Pedigree &amp; Practice</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface leading-tight">
+        Crafting Environments That Resonate with the Soul
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Where classical European discipline meets tactile organic quietude. We orchestrate proportions, shadow lines, and natural stone into sanctuaries of stillness.
+      </p>
+</div>
+<!-- Editorial Architectural Photo Plate -->
+<div class="mt-space-lg relative w-full h-[380px] overflow-hidden rounded-xl bg-surface-container shadow-md">
+<img class="w-full h-full object-cover transform scale-100 transition-transform duration-700 hover:scale-105" data-alt="Monolithic architectural living sanctuary crafted with honed ivory travertine walls, high ceilings with softened skylights, minimalist raw oak modular lounge chair, bespoke linen floor-to-ceiling drapery, warm sunlight cascading over sculpted stone plinth, editorial design photography by Architectural Digest, quiet luxury palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7r5TeddzOAOJ35sKiqsKTdn8YsZgBtbLD79LlkXWMqeVVbLw61PEUnvsdZtLA7s8CfVa5-pZA908__Xc-9ZOdVdfCbo6fR1mJqHSX4x45CXrE2VXlKKEDltuh5nJmdjZJPoqMxoUaa_XSjz0iqOP6jEyDct6jXtV98lxj8x3UYJZSOtpFh2U62ZR5bsLCp3b4oJ_mUpt-6dHVxVymSAgyXybVeGiX2340pQuwNq3bHeF4RUkxzlFeZg"/>
+<div class="absolute bottom-4 left-4 right-4 p-space-md bg-surface/90 backdrop-blur-md rounded-lg shadow-sm flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm uppercase text-secondary">Atelier Studio Milano • Est. 2009</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Bespoke Spatial Architecture</p>
+</div>
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Studio Story Timeline -->
+<section class="w-full px-margin-mobile py-space-2xl bg-surface">
+<div class="flex flex-col gap-space-sm mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Genesis</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">The Studio Story</h2>
+</div>
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-sm space-y-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Founded in 2009 by Principal Architect <strong class="text-on-surface font-semibold">Nathan Van Rensselaer</strong> (NVR), our practice took shape from a fundamental rebellion against fleeting trends and cold, impersonal modernism.
+      </p>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Educated between Zurich and Florence, Van Rensselaer envisioned a studio where the rigor of European planar architecture would harmoniously commune with the natural warmth of unlacquered bronze, patinated lime wash, and hand-chiseled travertine.
+      </p>
+<!-- Key Milestones Metric Strip -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-md">
+<div class="p-space-sm bg-surface rounded-lg text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">15+</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Years Active</p>
+</div>
+<div class="p-space-sm bg-surface rounded-lg text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">140+</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Residences</p>
+</div>
+<div class="p-space-sm bg-surface rounded-lg text-center shadow-sm">
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">18</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1">Craft Masters</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Philosophy Pillars -->
+<section class="w-full px-margin-mobile py-space-xl bg-surface-container-low">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Foundational Truths</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Core Philosophy Pillars</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The unchanging ethos steering every commission, sketch, and joint.</p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Pillar 1 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm transition-all duration-300 hover:shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary">PILLAR 01</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Intentional Proportion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Form follows serenity and function. We compose architectural volumes with deliberate negative space, framing daylight so rooms breathe with sacred, uninterrupted quiet.
+        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm transition-all duration-300 hover:shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary">PILLAR 02</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">nature</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Tactile Honesty</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We reject imitation. Every surface features raw porous travertine, natural heavy linen, aged cast bronze, and FSC-certified smoked woods intended to age with graceful patina.
+        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-space-lg bg-surface rounded-xl shadow-sm transition-all duration-300 hover:shadow-md">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-label-md text-label-md text-secondary">PILLAR 03</span>
+<span class="material-symbols-outlined text-secondary text-[24px]">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Precision Engineering</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Millimeter-level zero-tolerance joinery. Concealed reveals, shadow gaps, and bespoke millwork designed to fit seamlessly into architectural fabric without visible hardware.
+        </p>
+</div>
+</div>
+</section>
+<!-- Interactive Material Tactility Strip -->
+<section class="w-full px-margin-mobile py-space-xl bg-surface">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary">Studio Materiality</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tactile Palette</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tap to inspect</span>
+</div>
+<div class="flex gap-space-sm overflow-x-auto pb-space-sm snap-x">
+<!-- Material 1 -->
+<div class="material-card flex-shrink-0 w-36 p-space-sm bg-surface-container rounded-lg shadow-sm cursor-pointer transition-all active:scale-95 bg-secondary-container" onclick="selectMaterial(this, 'Travertine Navona', 'Porous, unpolished Italian limestone cut along the vein for subtle tonal waves.')">
+<div class="w-full h-24 rounded bg-surface-container-high overflow-hidden mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Macro close-up photograph of natural Navona Travertine with organic creamy beige pores, delicate horizontal stratified stone layers, high-end architectural finish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNyeqxguO4K5PwrvjhX9u1b51cBUcBSx_79gY4alzagXqeVGzfbC_W_cZarlIrdqQPpgcS9Y4cVzbiVn97oosDWDgVO0LvPZeixNJ3JjNQl09bD4gFI1P47Q6QcevzDwQZCsBtdqX0fWfxIbexsWFJLFPw7OUbjYkDLLd4IG4smdWZRFowpRUMmIskNzLlbK4HDOp0x1_HslDFVKpuDw2-aEBSB2KRTYODsW1RjqOUjSg7rgvvg_acWw"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Travertine</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Navona Honed</span>
+</div>
+<!-- Material 2 -->
+<div class="material-card flex-shrink-0 w-36 p-space-sm bg-surface-container rounded-lg shadow-sm cursor-pointer transition-all active:scale-95" onclick="selectMaterial(this, 'French Smoked Oak', 'FSC-certified French white oak fumed with natural tannins for deep sepia undertones.')">
+<div class="w-full h-24 rounded bg-surface-container-high overflow-hidden mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Close up architectural texture of wire-brushed smoked oak wood grain with deep rich matte charcoal-brown walnut hues and delicate natural grain." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJlzmWV1Alzpa98HMjl0oI9x18MtpTsgl3CXx6UIZwScfxzB3NphCMxkRsSv_bIv28L_6rglPUTedqGsoyiKDr8LpzBhFURPO_V7mKmUEn2BTg86R2t9Wapm05ygaMS7_h1t8FmwXe1qHq-mJ2-Y1lbM8UIklJzMlMKqwEVgvajvIugqX79PigAn7Ecw6zvsPxwfBG4pECScm113qFI33t9I0l7lAQjqfBG52U9PZ6AaYRvuLN4nV0hA"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Smoked Oak</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tannin Treated</span>
+</div>
+<!-- Material 3 -->
+<div class="material-card flex-shrink-0 w-36 p-space-sm bg-surface-container rounded-lg shadow-sm cursor-pointer transition-all active:scale-95" onclick="selectMaterial(this, 'Unlacquered Gunmetal Bronze', 'Hand-rubbed architectural bronze that slowly patinates with ambient air and touch.')">
+<div class="w-full h-24 rounded bg-surface-container-high overflow-hidden mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Architectural brushed bronze metal detail with soft directional grain, warm dark metallic amber reflections, bespoke luxury millwork metal hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAMfOz_Y-_W3R7tMBtnowukuqTP7gJyaK0JW4RL1jd8FJyAEkeJRa6vA-0PxrOuSnaEUX4qZ2X0U5Tp4Qq-NPV_YYPAT51650ZcejI34GXqim-JthnXKMSJb3SKPDPeL_cHFxk5zHuIB5UBSOpt2aT4s8DfYDN0YUMWn8HKNWRXQTKQKyMQXs57AW0gblDSG1mKlpoJc4a03rTzS6SMKoPJFqPX0omi8to9HZg_9YLaGBQ3aRgCmnCVRw"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Aged Bronze</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Wax Rubbed</span>
+</div>
+<!-- Material 4 -->
+<div class="material-card flex-shrink-0 w-36 p-space-sm bg-surface-container rounded-lg shadow-sm cursor-pointer transition-all active:scale-95" onclick="selectMaterial(this, 'Belgian Raw Slub Linen', 'Organic unbleached flax woven on traditional shuttle looms in Flanders with natural tactile irregularities.')">
+<div class="w-full h-24 rounded bg-surface-container-high overflow-hidden mb-space-xs">
+<img class="w-full h-full object-cover" data-alt="Macro textile macro photo of heavy weave Belgian natural linen fabric in oatmeal ivory color with tactile organic threads and soft depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD0Vlt3tJMdm82OVeUKYvh4q4PQA91yRN0ii_Sav6rVl-CkLC8EqSZQ2Nj2PX3OAMeea9MfJpwSN3gvzNo6z4idGkVNEMVozHyQqljdb3iRL5E2WLqVxhh6n7wLz9ZYJA9Gg1gHR-379PTkwT70gr6RBNEjPxR9sdtfuE2NJ8uunL8bZRH3PP2ugjqsXUCNKp0muCNm4RO2uvnal4KPc2ptCFW6rxr_Y8fYS9tptFnjWa-1s5gbckj2w"/>
+</div>
+<p class="font-label-md text-label-md text-on-surface">Raw Linen</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Flemish Weave</span>
+</div>
+</div>
+<!-- Dynamic Material Spec Panel -->
+<div class="mt-space-md p-space-md bg-surface-container rounded-lg shadow-sm" id="material-spec-box">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<h4 class="font-label-md text-label-md text-on-surface uppercase" id="mat-title">Travertine Navona</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="mat-desc">
+        Porous, unpolished Italian limestone cut along the vein for subtle tonal waves. Extracted from ancient Tuscan quarries and honed without synthetic resin fills.
+      </p>
+</div>
+</section>
+<!-- Leadership & Design Principals -->
+<section class="w-full px-margin-mobile py-space-2xl bg-surface-container-low">
+<div class="flex flex-col gap-space-xs mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase text-secondary">The Principals</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Leadership &amp; Design</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The minds orchestrating our vision from concept sketches to the final millwork installation.</p>
+</div>
+<div class="flex flex-col gap-space-lg">
+<!-- Principal 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-72 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial portrait of Nathan Van Rensselaer, senior male architect in his late 40s wearing minimalist black linen jacket, contemplative gaze, natural soft studio window lighting, architectural models in soft focus background, monograph editorial quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCg3XMOBKdTns4XR6Brhx5vtcgpRFvdSdWJgOGUbyUWl7_sMRrk4mFpFWGBM2pmTgQGWIAEJCu5AcVDfPIf3RIMLR6ysPjtUAYZNJ4-krslmbqfiKE9YXMGLEQYLYJlnSLxawyM3zjQgFIUdvwIoPFAklpHK2oy3VfqVRVHpBH2CRaGuBdXDBFMpfHQbIaIhV__8OWFi0dGU-pVnEEIbrn1bYy-pm_xk2xPfza0umhFTjCqMM8B5UGQKQ"/>
+<div class="absolute top-3 left-3 px-space-sm py-space-xs bg-surface/90 backdrop-blur-md rounded">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">Founder • 2009</span>
+</div>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nathan Van Rensselaer</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-space-sm">Founder &amp; Chief Architect</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Directing holistic spatial strategy and architectural envelopes. Nathan's masterworks have been published across five continents, celebrated for spatial austerity and tactile reverence.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dipl. Arch ETH Zurich</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SIA / BDA Fellow</span>
+</div>
+</div>
+</div>
+<!-- Principal 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-72 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Editorial black and white profile of Elena Rostova, elegant female interior director in tailored charcoal turtleneck, evaluating architectural fabric samples in high ceiling sunlight studio, serene expression, high-fashion architectural editorial style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlhd5GEuqE8x96iaNQpCQNaZ3DKu75gbs8yuUc-_h-ZHwwpAQxj0_74RNmqT74LUgQkFQlbAJ1T1ify8ppD88SykSb_QrL1NjMIceK65EH15JXT3TUdgoR4iJZdhH7XhV9lxm2xv82jzWbP6V0AsxgDxUDZ9V-vqZjDORLk78ZX5UpfwiIfK3Z2hENvsqK1sX7Sw5gVnO75X-nSmFQknqro2GlMQEj9hcR8n-bsdXH3up5ToS5ZHpEUw"/>
+<div class="absolute top-3 left-3 px-space-sm py-space-xs bg-surface/90 backdrop-blur-md rounded">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">Partner • 2014</span>
+</div>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Elena Rostova</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-space-sm">Partner &amp; Head of Residential Interiors</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Elena curates the tactile soul of each space—orchestrating vintage acquisitions, custom loomed textiles, and bespoke art programs tailored for quiet contemplative living.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Politecnico di Milano</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bespoke Curation</span>
+</div>
+</div>
+</div>
+<!-- Principal 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm">
+<div class="relative w-full h-72 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Portrait of Marcus Sterling, male engineering fabrication director in clean minimalist navy workwear examining crafted timber joinery in a sunlit artisanal workshop, wood shavings on worktable, precise architectural craftsman focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZt8125_DWdvWQqfDsFq7LrEolPHARkO0aYsVtyO8YPDDwEy1XXU4rjLz5_vGDmAjb1BSjWUkDjm5zhR3ohVue7a-ggsBZMexcge6yCqWzrrAxibYZ0LGvta72A7Q8dxdDdyz27i9TwC5yo0UMQ-Wpu_mILDAyZ_WqJNuuF4oGfIIChZHCmpgJYeEEZBe0nCVstvOgJB5K7NOs0StZU81g22BHSJkAxlhxUg0iBWFNNYdblGWKlSjKzQ"/>
+<div class="absolute top-3 left-3 px-space-sm py-space-xs bg-surface/90 backdrop-blur-md rounded">
+<span class="font-label-sm text-label-sm uppercase text-on-surface">Fab Director • 2018</span>
+</div>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Marcus Sterling</h3>
+<p class="font-label-md text-label-md text-secondary uppercase tracking-wider mb-space-sm">Director of Modular Engineering &amp; Fabrication</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+            Pioneering the intersection of 5-axis CNC craft with artisanal bench-joinery. Marcus ensures zero visible fastenings and structural perfection across custom furniture and spatial dividers.
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Royal College of Art</span>
+<span class="inline-block w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Master Cabinetmaker</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Awards & Global Recognition -->
+<section class="w-full px-margin-mobile py-space-2xl bg-surface">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-sm text-label-sm uppercase text-secondary">Accolades</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Awards &amp; Recognition</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Distinctions honoring our ongoing pursuit of spatial quietude.</p>
+</div>
+<!-- Recognition Grid -->
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Award 1 -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">military_tech</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">AD100 Honoree</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Architectural Digest Global List • 2021, 2023, 2024</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">workspace_premium</span>
+</div>
+<!-- Award 2 -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">hotel_class</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Elle Decor Best Living Concept</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Villa Solarium Zurich • Annual Design Prize</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">workspace_premium</span>
+</div>
+<!-- Award 3 -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">public</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">World Architecture Festival Shortlist</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Kyoto Stone Pavilion • Residential Interior</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">workspace_premium</span>
+</div>
+<!-- Award 4 -->
+<div class="p-space-md bg-surface-container rounded-xl flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">grade</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Wallpaper* Design Award Finalist</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Monolith Bath &amp; Wellness Suite</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline-variant text-[20px]">workspace_premium</span>
+</div>
+</div>
+</section>
+<!-- Studio Craft & Workshop Teaser (Atelier) -->
+<section class="w-full px-margin-mobile py-space-2xl bg-primary text-on-primary rounded-t-3xl">
+<div class="flex flex-col gap-space-xs mb-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 rounded bg-on-primary/10 max-w-fit">
+<span class="material-symbols-outlined text-[14px] text-secondary-fixed">carpenter</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">In-House Production</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-primary leading-tight mt-space-xs">
+        Our In-House Millwork Atelier
+      </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim mt-space-xs">
+        We refuse external compromise. Every monolithic kitchen island, fluted lime partition, and pivot door is produced within our dedicated 12,000 sq ft fabrication workshop.
+      </p>
+</div>
+<!-- Workshop Gallery Showcase -->
+<div class="mt-space-lg relative w-full h-64 rounded-xl overflow-hidden shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Sunlit architectural joinery workshop with high clerestory windows, artisanal master cabinetmakers hand finishing a massive travertine and blackened oak island table, wood dust motes in sunbeams, fine woodworking tools neatly arranged." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHyEBq6m-xr8m8j8W6A8pwqpZXoWn7NGWSDvgHw7BkfOMfaOmmvdnysvM6sEUA1S2edSp_bMJUi9coGMNWi0RkDgIc27RJ-cHkdyqW_aqSBHYJgopFJZAwVE5-wGY5HOKXHm6t-etVl04txdKbzSzIFe195ntiUmE2OOgjZc9RDOzFAynECe6l3zlrEYXfq-S4HlpeCwfjFvfa779pX3gQr_OYfTg7r6QwITFiGB24pwFO261tSg9MYA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/30 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase text-secondary-fixed">Atelier Treviso, Italy</span>
+<p class="font-body-sm text-body-sm text-on-primary">Tolerances calibrated to 0.5mm</p>
+</div>
+<span class="p-space-xs rounded-full bg-on-primary/20 backdrop-blur-sm text-on-primary">
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Atelier Commitments List -->
+<div class="mt-space-lg space-y-space-sm">
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-highest/10">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">check_circle</span>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-primary">Zero Third-Party Bottlenecks</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Complete vertical integration from raw timber selection to site assembly.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-highest/10">
+<span class="material-symbols-outlined text-secondary-fixed mt-1">check_circle</span>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-on-primary">Individual Stone Block Curation</p>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim">Clients accompany our principals to quarries in Carrara and Tivoli for bespoke veining selection.</p>
+</div>
+</div>
+</div>
+<!-- Interactive Atelier Contact Drawer Trigger -->
+<div class="mt-space-xl">
+<button class="w-full py-4 px-space-lg bg-secondary text-on-primary rounded font-label-md text-label-md uppercase tracking-wider flex items-center justify-center gap-space-xs hover:bg-secondary/90 transition-colors shadow-md active:scale-[0.99]" onclick="toggleAtelierDetails()" type="button">
+<span>Request Atelier Folio</span>
+<span class="material-symbols-outlined text-[18px]" id="atelier-icon">arrow_forward</span>
+</button>
+</div>
+<!-- Micro Drawer Feedback -->
+<div class="hidden mt-space-md p-space-md rounded-xl bg-surface-container-highest/20 transition-all" id="atelier-drawer">
+<p class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed mb-1">Direct Consultation</p>
+<p class="font-body-sm text-body-sm text-primary-fixed mb-space-md">Our studio director responds personally to bespoke residential inquiries within 24 hours.</p>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-on-primary uppercase tracking-wider underline" href="tel:+18005550199">
+<span>Connect with Studio Coordinator</span>
+<span class="material-symbols-outlined text-[16px]">call</span>
+</a>
+</div>
+</section>
+<!-- Interactive JavaScript -->
+<script>
+    function selectMaterial(cardElement, name, description) {
+      // Clear active styles
+      document.querySelectorAll('.material-card').forEach(card => {
+        card.classList.remove('bg-secondary-container');
+        card.classList.add('bg-surface-container');
+      });
+      // Set active card
+      cardElement.classList.remove('bg-surface-container');
+      cardElement.classList.add('bg-secondary-container');
+
+      // Update Spec box with smooth fade
+      const specBox = document.getElementById('material-spec-box');
+      specBox.style.opacity = '0.5';
+      setTimeout(() => {
+        document.getElementById('mat-title').textContent = name;
+        document.getElementById('mat-desc').textContent = description;
+        specBox.style.opacity = '1';
+      }, 150);
+    }
+
+    function toggleAtelierDetails() {
+      const drawer = document.getElementById('atelier-drawer');
+      const icon = document.getElementById('atelier-icon');
+      if (drawer.classList.contains('hidden')) {
+        drawer.classList.remove('hidden');
+        icon.textContent = 'expand_less';
+      } else {
+        drawer.classList.add('hidden');
+        icon.textContent = 'arrow_forward';
+      }
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.03)]" data-active-classes="text-primary font-semibold"><div class="h-16 px-gutter-mobile flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[52px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="home" href="index.html"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Home</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="services" href="service.html"><span class="material-symbols-outlined text-[20px]">layers</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Services</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="projects" href="project.html"><span class="material-symbols-outlined text-[20px]">auto_awesome_mosaic</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Projects</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[52px] h-12 gap-space-xs transition-colors duration-200 text-primary font-semibold" data-path="about" href="about.html"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-sm text-label-sm tracking-wider uppercase">About</span></a><a class="flex flex-col items-center justify-center min-w-[52px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors duration-200" data-path="contact" href="contact.html"><span class="material-symbols-outlined text-[20px]">mail</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Contact</span></a></div></nav></body></html>
